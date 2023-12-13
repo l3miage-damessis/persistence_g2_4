@@ -1,0 +1,17 @@
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/XMLVisitor.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/Square.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/Triangle.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/Visitable.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/Visitor.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/JSonVisitor.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeWriter.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/Cube.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/Circle.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeXmlReader.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/ShapeType.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeJsonWriter.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeXmlWriter.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeJsonReader.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/persistence/ShapeReader.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/ShapeFactory.java
+/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/main/java/edu/uga/miage/m1/g2_4/polygons/metier/shapes/SimpleShape.java
