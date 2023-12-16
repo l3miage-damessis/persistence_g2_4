@@ -2,6 +2,8 @@ package edu.uga.miage.m1.polygons.gui;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +18,12 @@ public class JDrawingPanel extends JPanel {
     public JDrawingPanel() {
         shapesOnPanel = new ArrayList<>();
         removedShapes = new ArrayList<>();
+        this.addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                refreshPanel();
+            }
+        });
     }
 
     public boolean cursorOnJDrawingPanel(int evtX, int evtY) {
@@ -115,4 +123,7 @@ public class JDrawingPanel extends JPanel {
         this.shapesOnPanel = shapesOnPanel;
     }
 
+    public void refreshPanel(){
+        paintComponents(getGraphics());
+    }
 }

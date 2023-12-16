@@ -36,7 +36,10 @@ Nous avons remanié les test de l'application principal pour prendre en compte c
 Eu égard au test automatique(unitaire et d'integration) que nous executé ainsi qu'au test utilisateur auxquels nous nous sommes soumis, nous considerons comme `stable` tout ce que nous avons obtenu jusqu'a ce niveau
 
 ## Remarque 
-A cette étape nous avons détécté un léger bug qui fait dans certains cas (tout juste aprés un import et lors de l'augmentation de la taille de la fenetre) les shapes présent sur l'interface devienne temporairement invisible malgré qu'il soient réélement présent et donc on doit réaliser une nouvelle action(tel que rajouter un nouveau shape) pour les rendre visibles.
+
+A cette étape nous avons détecté un léger bug qui fait dans certains cas (tout juste aprés un export et lors de l'augmentation de la taille de la fenetre) les shapes présent sur l'interface devienne temporairement invisible malgré qu'ils soient réélement présent et donc on doit réaliser une nouvelle action(tel que rajouter un nouveau shape) pour les rendre visibles.
+
+Nous avons apppliquer un correctif qui rafraichit les shapes quand on modifie la taille de la fenetre ainsi que juste après chaque export ou tentative d'export avorté
 
 ## Modèles utilisé
 

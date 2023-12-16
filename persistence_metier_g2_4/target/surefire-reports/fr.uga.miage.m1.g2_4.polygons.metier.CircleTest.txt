@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.uga.miage.m1.g2_4.polygons.metier.CircleTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.762 s - in fr.uga.miage.m1.g2_4.polygons.metier.CircleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.941 s - in fr.uga.miage.m1.g2_4.polygons.metier.CircleTest

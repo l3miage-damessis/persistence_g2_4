@@ -98,19 +98,18 @@ public class JDrawingFrame extends JFrame
     private transient ActionListener exportToXmlActionListener = new ExportToXmlActionListener("xml");
     private transient ActionListener importFromJsonActionListener = new ImportFromJsonActionListener("json");
     private transient ActionListener importFromXmlActionListener = new ImportFromXmlActionListener("xml");
-    private transient ShapeJsonReader shapeJsonReader=new ShapeJsonReader();
-    private transient ShapeJsonWriter shapeJsonWriter=new ShapeJsonWriter();
-    private transient ShapeXmlWriter shapeXmlWriter=new ShapeXmlWriter();
-    private transient ShapeXmlReader shapeXmlReader=new ShapeXmlReader();
+    private transient ShapeJsonReader shapeJsonReader = new ShapeJsonReader();
+    private transient ShapeJsonWriter shapeJsonWriter = new ShapeJsonWriter();
+    private transient ShapeXmlWriter shapeXmlWriter = new ShapeXmlWriter();
+    private transient ShapeXmlReader shapeXmlReader = new ShapeXmlReader();
     FileDialog fd;
-    private transient ShapeFactory shapeFactory=ShapeFactory.getShapeFactory();
+    private transient ShapeFactory shapeFactory = ShapeFactory.getShapeFactory();
     private transient Logger logger = Logger.getLogger(JDrawingFrame.class.getName());
 
     /**
      * Tracks buttons to manage the background.
      */
     private EnumMap<ShapeType, JButton> buttons = new EnumMap<>(ShapeType.class);
-
 
     private transient DrawTool drawTool = new DrawTool();
 
@@ -276,9 +275,10 @@ public class JDrawingFrame extends JFrame
         jDrawingPanel.isCursorOnAShape((int) mouseLastPosition.getX(), (int) mouseLastPosition.getY());
         SimpleShape selectedShape = jDrawingPanel.getSelectedShape();
         if (mouseLastPosition.getX() == evt.getX() && mouseLastPosition.getY() == evt.getY()) {
-            AddShapeCommand addShapeCommand = new AddShapeCommand(jDrawingPanel, shapeFactory.createShape(shapeItemSelectedInToolBar,
-                    evt.getX(),
-                    evt.getY()));
+            AddShapeCommand addShapeCommand = new AddShapeCommand(jDrawingPanel,
+                    shapeFactory.createShape(shapeItemSelectedInToolBar,
+                            evt.getX(),
+                            evt.getY()));
             drawTool.executeCommand(addShapeCommand);
         } else {
             if (selectedShape != null) {
@@ -347,45 +347,50 @@ public class JDrawingFrame extends JFrame
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            List<SimpleShape> listOfShapeToPersist=jDrawingPanel.getShapesOnPanel();
+            List<SimpleShape> listOfShapeToPersist = jDrawingPanel.getShapesOnPanel();
             if (!listOfShapeToPersist.isEmpty()) {
                 String defaultDirectory = "./src/main/resources/edu/uga/miage/m1/persistence_data";
 
-            // Check if the default directory exists
-            File directory = new File(defaultDirectory);
-            if (!directory.exists() || !directory.isDirectory()) {
-                // Directory does not exist or is not a directory, handle accordingly
-                // You might want to choose a fallback directory or prompt the user to select
-                // one
-                // For simplicity, we'll use the user's home directory as a fallback
-                defaultDirectory = System.getProperty("user.home");
-            }
-            String defaultFileName = "export-"
-                    + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss-SSS")) + "."
-                    + fileType;
-            fd = new FileDialog(JDrawingFrame.this, "Enregistrer un fichier", FileDialog.SAVE);
-            fd.setDirectory(defaultDirectory);
-            fd.setFile(defaultFileName);
-            fd.setVisible(true);
+                // Check if the default directory exists
+                File directory = new File(defaultDirectory);
+                if (!directory.exists() || !directory.isDirectory()) {
+                    // Directory does not exist or is not a directory, handle accordingly
+                    // You might want to choose a fallback directory or prompt the user to select
+                    // one
+                    // For simplicity, we'll use the user's home directory as a fallback
+                    defaultDirectory = System.getProperty("user.home");
+                }
+                String defaultFileName = "export-"
+                        + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss-SSS")) + "."
+                        + fileType;
+                fd = new FileDialog(JDrawingFrame.this, "Enregistrer un fichier", FileDialog.SAVE);
+                fd.setDirectory(defaultDirectory);
+                fd.setFile(defaultFileName);
+                fd.setVisible(true);
 
-            String filename = fd.getFile();
-            String path = fd.getDirectory() + filename;
+                String filename = fd.getFile();
+                String path = fd.getDirectory() + filename;
 
-            Path pathTofile = Paths.get(path);
+                Path pathTofile = Paths.get(path);
 
-            if (filename == null) {
-                JOptionPane.showMessageDialog(jDrawingPanel, "Vous n'avez rien sauvegardé©©");
+                if (filename == null) {
+                    JOptionPane.showMessageDialog(jDrawingPanel, "Vous n'avez rien sauvegardé©©");
+                } else {
+                    try {
+                        persistShapeToFile(pathTofile.toFile(), listOfShapeToPersist);
+                        JOptionPane.showMessageDialog(jDrawingPanel, "Sauvegarde effectuee.");
+                    } catch (IllegalArgumentException ex) {
+                        JOptionPane.showMessageDialog(jDrawingPanel, "Echec de la sauvegarde. " + ex.getMessage());
+                    }
+                }
+                jDrawingPanel.refreshPanel();
             } else {
-                persistShapeToFile(pathTofile.toFile(),listOfShapeToPersist);
-                JOptionPane.showMessageDialog(jDrawingPanel, "Sauvegarde effectuee.");
-            }
-        } else {
                 JOptionPane.showMessageDialog(jDrawingPanel,
                         "Aucune forme disponible a exporter. Pensez a en dessiner des maintenant.");
             }
         }
 
-        public abstract void persistShapeToFile(File destinationFile,List<SimpleShape>listOfShapeToPersist) ;
+        public abstract void persistShapeToFile(File destinationFile, List<SimpleShape> listOfShapeToPersist);
     }
 
     private class ExportToJsonActionListener extends ExportActionListener {
@@ -395,8 +400,7 @@ public class JDrawingFrame extends JFrame
         }
 
         @Override
-        public void persistShapeToFile(File destinationFile,List<SimpleShape>listOfShapeToPersist)
-        {
+        public void persistShapeToFile(File destinationFile, List<SimpleShape> listOfShapeToPersist) {
             try {
                 shapeJsonWriter.saveShapesToFile(destinationFile, listOfShapeToPersist);
             } catch (IOException e) {
@@ -412,11 +416,11 @@ public class JDrawingFrame extends JFrame
         }
 
         @Override
-        public void persistShapeToFile(File destinationFile,List<SimpleShape> listOfShapeToPersist){
+        public void persistShapeToFile(File destinationFile, List<SimpleShape> listOfShapeToPersist) {
             try {
                 shapeXmlWriter.saveShapesToFile(destinationFile, listOfShapeToPersist);
             } catch (IOException e) {
-                logger.log(Level.INFO, "Echec tentative de sauvegarde des shapes dans un fichier xml", e);
+                logger.log(Level.INFO, "Echec de sauvegarde des shapes dans un fichier xml", e);
             }
         }
     }
@@ -447,25 +451,33 @@ public class JDrawingFrame extends JFrame
             if (filename == null) {
                 JOptionPane.showMessageDialog(jDrawingPanel, "Tentative d'import abandonné©©");
             } else {
-                List<SimpleShape> listOfPersistedShape=getPersistedShape(pathToDataFile.toFile());
-                List<Command> commandsForReplayData = convertListOfShapeToAddShapeCommand(listOfPersistedShape);
+                List<Command> commandsForReplayData = new ArrayList<>();
+                try {
+                    List<SimpleShape> listOfPersistedShape = getPersistedShape(pathToDataFile.toFile());
+                    commandsForReplayData = convertListOfShapeToAddShapeCommand(listOfPersistedShape);
+                } catch (IllegalArgumentException ex) {
+                    JOptionPane.showMessageDialog(jDrawingPanel,
+                            "Echec de l'import. " + ex.getMessage());
+                }
                 if (commandsForReplayData.isEmpty()) {
                     JOptionPane.showMessageDialog(jDrawingPanel,
                             "Echec dans l'import.Aucune donnée vialable n'a pu etre récupéré");
+                } else {
+                    for (Command addShapeCommand : commandsForReplayData) {
+                        drawTool.executeCommand(addShapeCommand);
+                    }
                 }
-                for(Command addShapeCommand:commandsForReplayData){
-                    drawTool.executeCommand(addShapeCommand);
-                }
+                jDrawingPanel.refreshPanel();
             }
         }
 
-        public List<Command> convertListOfShapeToAddShapeCommand(List<SimpleShape> listOfShape){
-            List<Command> listOfCommands=new ArrayList<>();
-            for(SimpleShape simpleShape : listOfShape){
-                Command addShapeCommand=new AddShapeCommand(jDrawingPanel, simpleShape); 
-                listOfCommands.add(addShapeCommand); 
+        public List<Command> convertListOfShapeToAddShapeCommand(List<SimpleShape> listOfShape) {
+            List<Command> listOfCommands = new ArrayList<>();
+            for (SimpleShape simpleShape : listOfShape) {
+                Command addShapeCommand = new AddShapeCommand(jDrawingPanel, simpleShape);
+                listOfCommands.add(addShapeCommand);
             }
-            return listOfCommands; 
+            return listOfCommands;
         }
 
         public abstract List<SimpleShape> getPersistedShape(File sourceFile);
@@ -478,7 +490,7 @@ public class JDrawingFrame extends JFrame
         }
 
         @Override
-        public  List<SimpleShape> getPersistedShape(File sourceFile){
+        public List<SimpleShape> getPersistedShape(File sourceFile) {
             return shapeJsonReader.uploadShapesFromFile(sourceFile);
         }
     }
@@ -490,7 +502,7 @@ public class JDrawingFrame extends JFrame
         }
 
         @Override
-        public  List<SimpleShape> getPersistedShape(File sourceFile){
+        public List<SimpleShape> getPersistedShape(File sourceFile) {
             return shapeXmlReader.uploadShapesFromFile(sourceFile);
         }
 

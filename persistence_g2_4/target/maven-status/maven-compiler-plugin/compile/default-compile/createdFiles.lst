@@ -4,6 +4,7 @@ edu\uga\miage\m1\polygons\gui\command\MoveShapeCommand.class
 edu\uga\miage\m1\polygons\gui\command\Command.class
 edu\uga\miage\m1\polygons\gui\DrawTool.class
 edu\uga\miage\m1\polygons\gui\App.class
+edu\uga\miage\m1\polygons\gui\JDrawingPanel$1.class
 edu\uga\miage\m1\polygons\gui\JDrawingFrame$ExportActionListener.class
 edu\uga\miage\m1\polygons\gui\JDrawingFrame$ImportFromJsonActionListener.class
 edu\uga\miage\m1\polygons\gui\JDrawingFrame$ImportActionListener.class
