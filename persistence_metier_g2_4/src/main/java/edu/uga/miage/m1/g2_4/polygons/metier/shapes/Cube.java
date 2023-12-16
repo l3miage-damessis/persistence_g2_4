@@ -45,8 +45,12 @@ public class Cube extends SimpleShape {
 
     @Override
     public void draw(Graphics2D g2d) {
-            CubePanel c = new CubePanel(100, x, y);
+            CubePanel c = createCubePanel();
             c.paintComponent(g2d);
+    }
+
+    public CubePanel createCubePanel(){
+        return new CubePanel(100, this.x, this.y);
     }
 
     @Override

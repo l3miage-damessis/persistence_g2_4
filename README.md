@@ -4,8 +4,12 @@
 - ### Damessi Samuel
 - ### Freund Galeano Matias
 
+## Introduction
+Persistence_g2_4 est un projet d'outil permettant de representer des formes(shapes) sur une interface graphique 
+
 ## Objectifs
-Ce projet vise a mettre en pratique les notions de design pattern(patrons de conceptions) de qualité de code et de test.Vous verez tout du long aussi bien dans le code que dans les diagramme de classe fourni ici que nous avons eu a utiliser et adapter differents design pattern pour mettre en place les fonctionnalité voulu. Le code produit a été fait en essayant de respecter les bonnes pratiques de codage que nous avons pu surveiller grace a `sonar` et nous y avons rajouter des test `junit` d'integration pour s'assurer que le resultat obtenu correspondait aux attentes.
+Ce projet s'inscrit dans une démarche visant à mettre en pratique les notions de design pattern (patrons de conception), de qualité de code, et de tests. Tout au long du développement, les auteurs ont utilisé et adapté différents design patterns, comme en témoignent le code et les diagrammes de classe fournis. L'objectif principal était de mettre en place les fonctionnalités souhaitées tout en respectant les bonnes pratiques de codage. Le code produit a été scruté à l'aide de l'outil `Sonar`, et des tests unitaire et d'intégration `JUnit` ont été ajoutés pour garantir que les résultats obtenus correspondent aux attentes.
+
 
 ## Réalisations
 
@@ -20,11 +24,10 @@ Pour consulter chacune des iterations cliquez dessus
 
 ### [Itération 3](Iteration3.md) 
 
+### [Itération 4](Iteration4.md) 
 
-### Inachévés de l'iteration 3 
-L'itération 3 n'a pas été mené a bout. Il était envisagé a cette étape de rajouter une fonctionnalité de groupage de forme(Shape) et de pouvoir appliquer les autre fonctionnalité de deplacement, annulation(dégroupage), rexecution(regroupage), export, import sur sur cette forme composite(compositeShape).L'étape de conception a été réaliser et des implémentation on été fait mais n'étant pas arrivé a une version stable nous avons décidé de ne pas l'inclure dans la livrasion principal mais de mettre cette version là sur la branche feature\grouping et il est a noté que dans cette version certaines régressions sont a constaté par rapport a la version stable
 
-## Fonctionnalité 
+## Fonctionnalités 
 -Dessiner des forme dans un design canvas.
 -Exporter en JSON ou en XML des données sur les shapes présent sur le design canvas.
 -Importer des données précédemment exporté pour initialiser le design canvas.
@@ -35,7 +38,7 @@ L'itération 3 n'a pas été mené a bout. Il était envisagé a cette étape de
 ## Mise en place du projet en local
 
 ### Prérequis technique
-- Java jdk version 8 ou supérieur
+- Java jdk version 13 ou supérieur
 - Maven 3.6.3 ou supérieur
 - IDE (Visual Studio Code, Eclipse, Netbeans, ...)
 - StarUML (visualisation des diagrammes)

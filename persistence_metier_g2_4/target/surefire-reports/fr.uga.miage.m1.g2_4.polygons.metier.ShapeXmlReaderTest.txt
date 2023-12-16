@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.uga.miage.m1.g2_4.polygons.metier.ShapeXmlReaderTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in fr.uga.miage.m1.g2_4.polygons.metier.ShapeXmlReaderTest

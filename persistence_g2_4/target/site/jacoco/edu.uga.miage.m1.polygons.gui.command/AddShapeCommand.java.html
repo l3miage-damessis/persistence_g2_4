@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AddShapeCommand.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Persistence_g2_4</a> &gt; <a href="index.source.html" class="el_package">edu.uga.miage.m1.polygons.gui.command</a> &gt; <span class="el_source">AddShapeCommand.java</span></div><h1>AddShapeCommand.java</h1><pre class="source lang-java linenums">package edu.uga.miage.m1.polygons.gui.command;
 
 import edu.uga.miage.m1.polygons.gui.JDrawingPanel;
-import edu.uga.miage.m1.polygons.gui.shapes.ShapeType;
+import edu.uga.miage.m1.g2_4.polygons.metier.shapes.SimpleShape;
 
 public class AddShapeCommand implements Command {
 
     private JDrawingPanel jDrawingPanel;
-    private ShapeType shapeType;
-    private int x;
-    private int y;
+    private SimpleShape simpleShape;
 
-<span class="fc" id="L13">    public AddShapeCommand(JDrawingPanel jDrawingPanel,ShapeType shapeType,int x, int y) {</span>
-<span class="fc" id="L14">        this.jDrawingPanel = jDrawingPanel;</span>
-<span class="fc" id="L15">        this.shapeType=shapeType;</span>
-<span class="fc" id="L16">        this.x=x;</span>
-<span class="fc" id="L17">        this.y=y;</span>
-<span class="fc" id="L18">    }</span>
+<span class="fc" id="L11">    public AddShapeCommand(JDrawingPanel jDrawingPanel, SimpleShape simpleShape) {</span>
+<span class="fc" id="L12">        this.jDrawingPanel = jDrawingPanel;</span>
+<span class="fc" id="L13">        this.simpleShape = simpleShape;</span>
+<span class="fc" id="L14">    }</span>
 
     @Override
     public void execute() {
-<span class="fc" id="L22">        jDrawingPanel.addShape(shapeType,x,y);</span>
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L18">            jDrawingPanel.addShape(simpleShape);</span>
+<span class="fc" id="L19">    }</span>
 
     @Override
     public void undo() {
-<span class="fc" id="L27">        jDrawingPanel.removeLastShape();</span>
-<span class="fc" id="L28">    }</span>
+<span class="fc" id="L23">        jDrawingPanel.removeLastShape();</span>
+<span class="fc" id="L24">    }</span>
 
     @Override
     public void redo() {
-<span class="fc" id="L32">        jDrawingPanel.reAddShape();</span>
-<span class="fc" id="L33">    }</span>
+<span class="fc" id="L28">        jDrawingPanel.reAddShape();</span>
+<span class="fc" id="L29">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

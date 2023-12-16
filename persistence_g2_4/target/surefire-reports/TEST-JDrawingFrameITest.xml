@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="JDrawingFrameITest" time="55.902" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="JDrawingFrameITest" time="55.661" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\persistence_g2_4\target\test-classes;C:\persistence_g2_4\target\classes;C:\Users\dames\.m2\repository\org\glassfish\javax.json\1.1.4\javax.json-1.1.4.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\edu.uga.singleshape\1.0.1\edu.uga.singleshape-1.0.1.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.0\junit-jupiter-engine-5.4.0.jar;C:\Users\dames\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-engine\1.4.0\junit-platform-engine-1.4.0.jar;C:\Users\dames\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-commons\1.4.0\junit-platform-commons-1.4.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.0\junit-jupiter-api-5.4.0.jar;C:\Users\dames\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\dames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\dames\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\dames\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;"/>
+    <property name="java.class.path" value="C:\persistence_g2_4\persistence_g2_4\target\test-classes;C:\persistence_g2_4\persistence_g2_4\target\classes;C:\Users\dames\.m2\repository\org\glassfish\javax.json\1.1.4\javax.json-1.1.4.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\edu.uga.singleshape\1.0.1\edu.uga.singleshape-1.0.1.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\persistence_metier_g2_4\1.0.0\persistence_metier_g2_4-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.0\junit-jupiter-engine-5.4.0.jar;C:\Users\dames\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-engine\1.4.0\junit-platform-engine-1.4.0.jar;C:\Users\dames\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-commons\1.4.0\junit-platform-commons-1.4.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.0\junit-jupiter-api-5.4.0.jar;C:\Users\dames\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\dames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\dames\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\dames\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;"/>
     <property name="sun.awt.enableExtraMouseButtons" value="true"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\dames\AppData\Local\Temp\surefire17630147386391007191\surefirebooter10048880390764613904.jar C:\Users\dames\AppData\Local\Temp\surefire17630147386391007191 2023-11-19T19-17-04_449-jvmRun1 surefire9879440721642328414tmp surefire_03812509304989969056tmp"/>
+    <property name="sun.java.command" value="C:\Users\dames\AppData\Local\Temp\surefire4921215485696671508\surefirebooter13791083485098789813.jar C:\Users\dames\AppData\Local\Temp\surefire4921215485696671508 2023-12-14T18-48-54_430-jvmRun1 surefire8708692966431031672tmp surefire_015578991752316500439tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\persistence_g2_4\target\test-classes;C:\persistence_g2_4\target\classes;C:\Users\dames\.m2\repository\org\glassfish\javax.json\1.1.4\javax.json-1.1.4.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\edu.uga.singleshape\1.0.1\edu.uga.singleshape-1.0.1.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.0\junit-jupiter-engine-5.4.0.jar;C:\Users\dames\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-engine\1.4.0\junit-platform-engine-1.4.0.jar;C:\Users\dames\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-commons\1.4.0\junit-platform-commons-1.4.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.0\junit-jupiter-api-5.4.0.jar;C:\Users\dames\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\dames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\dames\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\dames\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\persistence_g2_4\persistence_g2_4\target\test-classes;C:\persistence_g2_4\persistence_g2_4\target\classes;C:\Users\dames\.m2\repository\org\glassfish\javax.json\1.1.4\javax.json-1.1.4.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\edu.uga.singleshape\1.0.1\edu.uga.singleshape-1.0.1.jar;C:\Users\dames\.m2\repository\edu\uga\miage\m1\persistence_metier_g2_4\1.0.0\persistence_metier_g2_4-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.0\junit-jupiter-engine-5.4.0.jar;C:\Users\dames\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-engine\1.4.0\junit-platform-engine-1.4.0.jar;C:\Users\dames\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\dames\.m2\repository\org\junit\platform\junit-platform-commons\1.4.0\junit-platform-commons-1.4.0.jar;C:\Users\dames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.0\junit-jupiter-api-5.4.0.jar;C:\Users\dames\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\dames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\dames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\dames\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\dames\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\dames"/>
     <property name="user.language" value="fr"/>
@@ -26,12 +26,12 @@
     <property name="java.version.date" value="2023-04-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\persistence_g2_4"/>
+    <property name="basedir" value="C:\persistence_g2_4\persistence_g2_4"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\dames\AppData\Local\Temp\surefire17630147386391007191\surefirebooter10048880390764613904.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dames\AppData\Local\Temp\surefire4921215485696671508\surefirebooter13791083485098789813.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9-29"/>
@@ -46,12 +46,12 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\dames\AppData\Local\Temp\"/>
     <property name="java.version" value="20.0.1"/>
-    <property name="user.dir" value="C:\persistence_g2_4"/>
+    <property name="user.dir" value="C:\persistence_g2_4\persistence_g2_4"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\dames\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\dames\AppData\Local\Programs\Python\Python311\;C:\Users\dames\AppData\Local\Microsoft\WindowsApps;C:\Users\dames\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dames\Downloads\apache-maven-3.9.2-bin (1)\apache-maven-3.9.2\bin;C:\Users\dames\AppData\Roaming\npm;C:\Users\dames\Downloads\Tinder\chromedriver-win64\chromedriver-win64;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\dames\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\dames\AppData\Local\Programs\Python\Python311\;C:\Users\dames\AppData\Local\Microsoft\WindowsApps;C:\Users\dames\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dames\Downloads\apache-maven-3.9.2\bin;C:\Users\dames\AppData\Roaming\npm;C:\Users\dames\Downloads\Tinder\chromedriver-win64\chromedriver-win64;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -59,13 +59,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testAddingCubeShapes" classname="JDrawingFrameITest" time="4.75"/>
-  <testcase name="testAddingCirleShapes" classname="JDrawingFrameITest" time="4.118"/>
-  <testcase name="testMovingShapes" classname="JDrawingFrameITest" time="6.12"/>
-  <testcase name="testUndoingAddShape" classname="JDrawingFrameITest" time="6.138"/>
-  <testcase name="testRedoingAddShape" classname="JDrawingFrameITest" time="8.166"/>
-  <testcase name="testUndoingMovingShapes" classname="JDrawingFrameITest" time="8.164"/>
-  <testcase name="testAddingSquareShapes" classname="JDrawingFrameITest" time="4.139"/>
-  <testcase name="testRedoingMoveShape" classname="JDrawingFrameITest" time="10.172"/>
-  <testcase name="testAddingTriangleShapes" classname="JDrawingFrameITest" time="4.126"/>
+  <testcase name="testAddingCubeShapes" classname="JDrawingFrameITest" time="4.421"/>
+  <testcase name="testAddingCirleShapes" classname="JDrawingFrameITest" time="4.124"/>
+  <testcase name="testMovingShapes" classname="JDrawingFrameITest" time="6.143"/>
+  <testcase name="testUndoingAddShape" classname="JDrawingFrameITest" time="6.178"/>
+  <testcase name="testRedoingAddShape" classname="JDrawingFrameITest" time="8.174"/>
+  <testcase name="testUndoingMovingShapes" classname="JDrawingFrameITest" time="8.171"/>
+  <testcase name="testAddingSquareShapes" classname="JDrawingFrameITest" time="4.133"/>
+  <testcase name="testRedoingMoveShape" classname="JDrawingFrameITest" time="10.165"/>
+  <testcase name="testAddingTriangleShapes" classname="JDrawingFrameITest" time="4.144"/>
 </testsuite>

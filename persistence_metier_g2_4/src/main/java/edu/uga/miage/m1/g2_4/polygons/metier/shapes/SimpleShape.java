@@ -28,16 +28,16 @@ public abstract class SimpleShape implements Visitable {
 
     boolean doesXIsInShapeBounds(int x){
         return isCoordinateInShapeBounds(getX(),x);
-    };
+    }
 
     boolean doesYIsInShapeBounds(int y){
         return isCoordinateInShapeBounds(getY(),y);
-    };
+    }
 
     public boolean isCoordinateInShapeBounds(int shapeCoordinate, int targetCoordinate){
         int shapeBoundary = shapeCoordinate + 50;
         return (shapeBoundary > targetCoordinate && shapeCoordinate < targetCoordinate);
-    };
+    }
 
     public boolean doesCoordinatesAreInShapeBounds(int x, int y){
         return doesXIsInShapeBounds(x) && doesYIsInShapeBounds(y);

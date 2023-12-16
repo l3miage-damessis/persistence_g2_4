@@ -1,5 +1,8 @@
-fr/uga/miage/m1/g2_4/polygons/metier/ExportJsonTest.class
-fr/uga/miage/m1/g2_4/polygons/metier/CircleTest.class
-fr/uga/miage/m1/g2_4/polygons/metier/TriangleTest.class
-fr/uga/miage/m1/g2_4/polygons/metier/CubeTest.class
-fr/uga/miage/m1/g2_4/polygons/metier/ShapeJsonReaderTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\ShapeXmlReaderTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\ShapeXmlWriterTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\CircleTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\ShapeJsonReaderTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\CubeTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\SquareTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\ShapeJsonWriterTest.class
+fr\uga\miage\m1\g2_4\polygons\metier\TriangleTest.class

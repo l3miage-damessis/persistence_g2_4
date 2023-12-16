@@ -23,19 +23,21 @@ public class DrawTool {
     }
 
     public void executeCommand(Command command) {
-        command.execute();
-        commandsHistory.add(command);
+        if (command != null) {
+            command.execute();
+            commandsHistory.add(command);
+        }
     }
 
-    public void executeMultipleCommand(List<Command> multipleCommands){
-        for(Command command:multipleCommands){
+    public void executeMultipleCommand(List<Command> multipleCommands) {
+        for (Command command : multipleCommands) {
             this.executeCommand(command);
         }
     }
 
     public void undoCommand() {
         if (!commandsHistory.isEmpty()) {
-            Command commandToUndo=commandsHistory.get(commandsHistory.size()-1);
+            Command commandToUndo = commandsHistory.get(commandsHistory.size() - 1);
             commandToUndo.undo();
             commandsHistory.remove(commandToUndo);
             canceledCommandsHistory.add(commandToUndo);
@@ -43,13 +45,13 @@ public class DrawTool {
     }
 
     public void redoCommand() {
-        if (!canceledCommandsHistory.isEmpty()){
-            Command commandToRedo=canceledCommandsHistory.get(canceledCommandsHistory.size()-1);
+        if (!canceledCommandsHistory.isEmpty()) {
+            Command commandToRedo = canceledCommandsHistory.get(canceledCommandsHistory.size() - 1);
             commandToRedo.redo();
             canceledCommandsHistory.remove(commandToRedo);
             commandsHistory.add(commandToRedo);
         }
-        
+
     }
 
 }

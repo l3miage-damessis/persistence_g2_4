@@ -1,6 +1,5 @@
-CubeTest.class
-CircleTest.class
 JDrawingFrameITest.class
-SquareTest.class
+MoveShapeCommandTest.class
 JDrawingPanelTest.class
-TriangleTest.class
+AddShapeCommandTest.class
+DrawToolTest.class

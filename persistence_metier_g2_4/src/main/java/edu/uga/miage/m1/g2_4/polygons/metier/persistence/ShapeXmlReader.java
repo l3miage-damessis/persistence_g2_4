@@ -1,6 +1,7 @@
 package edu.uga.miage.m1.g2_4.polygons.metier.persistence;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -18,14 +19,17 @@ import org.xml.sax.SAXException;
 import edu.uga.miage.m1.g2_4.polygons.metier.shapes.SimpleShape;
 
 public class ShapeXmlReader extends ShapeReader{
-    private transient Logger logger = Logger.getLogger(ShapeXmlReader.class.getName());
+    private  Logger logger = Logger.getLogger(ShapeXmlReader.class.getName());
 
     public ShapeXmlReader() {
-
+        super();
     }
 
     @Override
     public List<SimpleShape> uploadShapesFromFile(File sourceFile) {
+        if (!isValidFile(sourceFile)) {
+            throw new IllegalArgumentException("Le fichier source doit etre un fichier xml.");
+        }
         List<SimpleShape> shapesOnFile = new ArrayList<>();
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = null;
@@ -36,7 +40,7 @@ public class ShapeXmlReader extends ShapeReader{
 
                 dBuilder = dbFactory.newDocumentBuilder();
             } catch (ParserConfigurationException e) {
-                e.printStackTrace();
+                logger.log(Level.INFO, "Echec tentative de recuperation des shapes", e);
             }
             Document doc = null;
             try {
@@ -45,7 +49,6 @@ public class ShapeXmlReader extends ShapeReader{
                 }
             } catch (SAXException | IOException e) {
                 logger.log(Level.INFO, "Echec tentative de recuperation des shapes", e);
-                return shapesOnFile;
             }
             if (doc != null) {
                 doc.getDocumentElement().normalize();
@@ -72,6 +75,14 @@ public class ShapeXmlReader extends ShapeReader{
             }
         return shapesOnFile;
     }
-
+   
+    @Override
+    public boolean isValidFile(File file){
+        if(file==null){
+            return false;
+        }
+        String fileName = file.toPath().getFileName().toString();
+        return fileName.toLowerCase().endsWith(".xml");
+    }
 
 }

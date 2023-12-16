@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,Square,0,124,0,0,0,25,0,8,0,8
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,Cube,0,73,0,0,0,20,0,9,0,9
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,ShapeFactory,0,37,0,6,0,8,0,6,0,2
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,Triangle,0,225,1,9,0,37,1,16,0,12
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,Circle,0,124,0,0,0,25,0,8,0,8
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,SimpleShape,0,41,1,7,0,6,1,8,0,5
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.shapes,ShapeType,0,27,0,0,0,2,0,1,0,1
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeXmlWriter,12,92,0,10,3,24,0,8,0,3
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,XMLVisitor,0,54,0,0,0,12,0,7,0,7
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeJsonReader,7,99,1,7,2,25,1,6,0,3
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeReader,0,50,1,4,0,14,1,5,0,2
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,JSonVisitor,0,77,0,0,0,15,0,6,0,6
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeJsonWriter,12,93,0,10,3,23,0,8,0,3
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeWriter,0,3,0,0,0,2,0,1,0,1
+persistence_metier,edu.uga.miage.m1.g2_4.polygons.metier.persistence,ShapeXmlReader,16,127,4,8,5,35,4,5,0,3

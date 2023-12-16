@@ -9,7 +9,7 @@ import static org.mockito.Mockito.verify;
 
 import java.util.Random;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import edu.uga.miage.m1.g2_4.polygons.metier.persistence.JSonVisitor;
 import edu.uga.miage.m1.g2_4.polygons.metier.persistence.XMLVisitor;
@@ -68,7 +68,7 @@ class CircleTest {
     }
 
     @Test
-    void circle_doesCoordinatesAreInShapeBoundsTest() {
+    void circle_doesCoordinatesAreInShapeBounds_test() {
         int x = random.nextInt();
         int y = random.nextInt();
         SimpleShape circle1 = shapeFactory.createShape(ShapeType.CIRCLE,x,y);
@@ -101,7 +101,7 @@ class CircleTest {
     }
 
     @Test
-    void circle_acceptTest() {
+    void circle_accept_test() {
         int x = random.nextInt();
         int y = random.nextInt();
         SimpleShape circle1 = shapeFactory.createShape(ShapeType.CIRCLE,x,y);

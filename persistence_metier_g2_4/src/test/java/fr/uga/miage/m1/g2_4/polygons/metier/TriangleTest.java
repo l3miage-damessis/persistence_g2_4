@@ -28,7 +28,7 @@ class TriangleTest {
     ShapeFactory shapeFactory=ShapeFactory.getShapeFactory();
 
     @Test
-    void square_getX_getY_test() {
+    void triangle_getX_getY_test() {
         int x = random.nextInt();
         int y = random.nextInt();
 
@@ -39,7 +39,7 @@ class TriangleTest {
     }
 
     @Test
-    void triangle_drawTest() {
+    void triangle_draw_test() {
         Graphics2D g2d = mock(Graphics2D.class);
         int x = random.nextInt();
         int y = random.nextInt();
@@ -67,7 +67,7 @@ class TriangleTest {
     }
 
     @Test
-    void triangle_doesCoordinatesAreInShapeBoundsTest() {
+    void triangle_doesCoordinatesAreInShapeBounds_test() {
         int x = random.nextInt();
         int y = random.nextInt();
         SimpleShape triangle1 = shapeFactory.createShape(ShapeType.TRIANGLE,x,y);

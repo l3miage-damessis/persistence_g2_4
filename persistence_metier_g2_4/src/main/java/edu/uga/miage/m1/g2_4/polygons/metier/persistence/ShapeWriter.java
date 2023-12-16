@@ -8,10 +8,11 @@ import edu.uga.miage.m1.g2_4.polygons.metier.shapes.SimpleShape;
 
 public abstract class ShapeWriter {
 
-    public ShapeWriter(){
+    protected ShapeWriter(){
 
     }
 
-    public abstract boolean saveShapesToFile(File destinationFile, List<SimpleShape> listOfShapes) throws IOException;
+    public abstract void saveShapesToFile(File destinationFile, List<SimpleShape> listOfShapes) throws IOException;
 
+    public abstract boolean isValidFile(File file);
 }

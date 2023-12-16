@@ -1,6 +1,8 @@
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/ShapeJsonWriterTest.java
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/CubeTest.java
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/SquareTest.java
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/TriangleTest.java
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/CircleTest.java
-/home/d/damessis/Téléchargements/persistence_g2_4/persistence_metier_g2_4/src/test/java/fr/uga/miage/m1/g2_4/polygons/metier/ShapeJsonReaderTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\CircleTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\CubeTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\ShapeXmlWriterTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\ShapeJsonWriterTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\ShapeXmlReaderTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\ShapeJsonReaderTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\TriangleTest.java
+C:\persistence_g2_4\persistence_metier_g2_4\src\test\java\fr\uga\miage\m1\g2_4\polygons\metier\SquareTest.java

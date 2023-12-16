@@ -34,9 +34,9 @@ public class JDrawingPanel extends JPanel {
     }
 
     public void selectShape(int evtX, int evtY) {
-        for (SimpleShape SimpleShape : shapesOnPanel) {
-            if (SimpleShape.doesCoordinatesAreInShapeBounds(evtX, evtY)) {
-                SimpleShape.setSelected(true);
+        for (SimpleShape simpleShape : shapesOnPanel) {
+            if (simpleShape.doesCoordinatesAreInShapeBounds(evtX, evtY)) {
+                simpleShape.setSelected(true);
                 break;
             }
         }
@@ -57,12 +57,13 @@ public class JDrawingPanel extends JPanel {
         for (SimpleShape SimpleShape : shapesOnPanel) {
             SimpleShape.setSelected(false);
         }
-
     }
 
     public void addShape(SimpleShape simpleShape) {
-        simpleShape.draw((Graphics2D) this.getGraphics());
-        shapesOnPanel.add(simpleShape);
+        if (simpleShape != null) {
+            simpleShape.draw((Graphics2D) this.getGraphics());
+            shapesOnPanel.add(simpleShape);
+        }
     }
 
     public void reAddShape() {
@@ -104,6 +105,10 @@ public class JDrawingPanel extends JPanel {
 
     public List<SimpleShape> getShapesOnPanel() {
         return shapesOnPanel;
+    }
+
+    public List<SimpleShape> getRemovedShapes() {
+        return removedShapes;
     }
 
     public void setShapesOnPanel(List<SimpleShape> shapesOnPanel) {

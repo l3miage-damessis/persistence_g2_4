@@ -9,19 +9,23 @@ import javax.swing.JFrame;
  *  @author &lt;a href=&quot;mailto:christophe.saint-marcel@univ-grenoble-alpes.fr&quot;&gt;Christophe&lt;/a&gt;
  *
  */
-<span class="nc" id="L12">public class GUIHelper {</span>
+public class GUIHelper {
 	
+	private GUIHelper(){
+
+	}
 	public static void showOnFrame(String frameName) {
-<span class="nc" id="L15">		JFrame frame = new JDrawingFrame(frameName);</span>
-<span class="nc" id="L16">		WindowAdapter wa = new WindowAdapter() {</span>
+<span class="nc" id="L18">		JFrame frame = new JDrawingFrame(frameName);</span>
+<span class="nc" id="L19">		WindowAdapter wa = new WindowAdapter() {</span>
+			@Override
 			public void windowClosing(WindowEvent e) {
-<span class="nc" id="L18">				System.exit(0);</span>
-<span class="nc" id="L19">			}</span>
+<span class="nc" id="L22">				System.exit(0);</span>
+<span class="nc" id="L23">			}</span>
 		};
-<span class="nc" id="L21">		frame.addWindowListener(wa);</span>
-<span class="nc" id="L22">		frame.pack();</span>
-<span class="nc" id="L23">		frame.setVisible(true);</span>
-<span class="nc" id="L24">	}</span>
+<span class="nc" id="L25">		frame.addWindowListener(wa);</span>
+<span class="nc" id="L26">		frame.pack();</span>
+<span class="nc" id="L27">		frame.setVisible(true);</span>
+<span class="nc" id="L28">	}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

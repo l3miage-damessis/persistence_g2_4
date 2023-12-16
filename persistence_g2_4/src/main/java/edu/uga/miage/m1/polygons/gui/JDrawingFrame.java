@@ -84,7 +84,6 @@ public class JDrawingFrame extends JFrame
     private static final long serialVersionUID = 1L;
     private JToolBar toolBar;
     private ShapeType shapeItemSelectedInToolBar;
-    private ShapeFactory shapeFactory=ShapeFactory.getShapeFactory();
     private JDrawingPanel jDrawingPanel;
     private JLabel label;
     private JMenuBar mMenuBar;
@@ -104,6 +103,7 @@ public class JDrawingFrame extends JFrame
     private transient ShapeXmlWriter shapeXmlWriter=new ShapeXmlWriter();
     private transient ShapeXmlReader shapeXmlReader=new ShapeXmlReader();
     FileDialog fd;
+    private transient ShapeFactory shapeFactory=ShapeFactory.getShapeFactory();
     private transient Logger logger = Logger.getLogger(JDrawingFrame.class.getName());
 
     /**
@@ -402,7 +402,7 @@ public class JDrawingFrame extends JFrame
             } catch (IOException e) {
                 logger.log(Level.INFO, "Echec tentative de sauvegarde des shapes dans un fichier json", e);
             }
-        } ;
+        }
     }
 
     private class ExportToXmlActionListener extends ExportActionListener {
@@ -418,7 +418,7 @@ public class JDrawingFrame extends JFrame
             } catch (IOException e) {
                 logger.log(Level.INFO, "Echec tentative de sauvegarde des shapes dans un fichier xml", e);
             }
-        } ;
+        }
     }
 
     private abstract class ImportActionListener implements ActionListener {
@@ -466,7 +466,7 @@ public class JDrawingFrame extends JFrame
                 listOfCommands.add(addShapeCommand); 
             }
             return listOfCommands; 
-        };
+        }
 
         public abstract List<SimpleShape> getPersistedShape(File sourceFile);
     }

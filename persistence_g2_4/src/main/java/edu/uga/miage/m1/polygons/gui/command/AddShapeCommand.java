@@ -15,10 +15,7 @@ public class AddShapeCommand implements Command {
 
     @Override
     public void execute() {
-        if(this.simpleShape!=null){
             jDrawingPanel.addShape(simpleShape);
-        }
- 
     }
 
     @Override
