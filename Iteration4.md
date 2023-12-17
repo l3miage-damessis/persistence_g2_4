@@ -7,7 +7,8 @@ Le but de cette itération est d'adopter une approche dite par `composant` . L'i
 ## Réalisations
 ### Nouveau composant
 Nous avons a cet effet crée un nouveau composant nommé `persistence_metier_g2_4`.Comme son nom l'indique ce nouveau composant nous permet d'isoler completement la logique metier.
-Pour plus de détail sur ce composant cliquer ici `->` [Composant persistence_metier_g2_4](ComposantPersistenceMetier.md) 
+
+Pour plus de détail sur ce composant et voir son diagramme de classe cliquer ici `->` [Composant persistence_metier_g2_4](ComposantPersistenceMetier.md) 
 
 Pour s'assurer de la fiabilité de ce composant qui est réutilisé nous avons implementé des test unitaire soigneusement élaboré et nous offrant un taux de couverture de plus de `90%` d'apres les relevés fourni par le module `jacoco` 
 
@@ -48,3 +49,6 @@ Nous avons apppliquer un correctif qui rafraichit les shapes quand on modifie la
 <img title="a title" alt="Alt text" src="conception\image\Diagramme_composant_principal_persistence_g2_4.png">
 
 ## Diagramme de composant global
+Diagramme_de_composant
+
+<img title="a title" alt="Alt text" src="conception\image\Diagramme_de_composant.png">
