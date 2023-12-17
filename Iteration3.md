@@ -11,7 +11,7 @@ Nous considerons comme `stable` tout ce que nous avons obtenu jusqu'a ce niveau
 
 ### Difficultés
 
-Malgré une étape de conception qui s'est bien déroulé et des premieres implémentation prometeuse nous n'avons pas pu mener l'ajout de la fonctionnalité de groupage a une version assez stable pour qu'elle puis etre livré au moment ou nous faisons ce rendu. Il subsitait notament des bug dans l'annulation et la réexecution du groupage.Si vous etes interesé par cette fonctionnalité vous pourrez trouvez des début d'implémentation sur la branch `fonctionnalite_de_groupage`
+Malgré une étape de conception qui s'est bien déroulé et des premieres implémentation prometeuse nous n'avons pas pu mener l'ajout de la fonctionnalité de groupage a une version assez stable pour qu'elle puis etre livré au moment ou nous faisons ce rendu. Il subsitait notament des bug dans l'annulation et la réexecution du groupage.
 
 
 
