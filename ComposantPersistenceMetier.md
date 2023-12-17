@@ -76,7 +76,7 @@ Pour intégrer `persistence_metier_g2_4` dans votre projet, suivez ces étapes :
 
 ## Utilisation
 
-Une fons l'installation fini vous pourrez utilisé les classes et fonctions du composant `persistence_metier_g2_4` via a des imports
+Une fois l'installation fini vous pourrez utilisé les classes et fonctions du composant `persistence_metier_g2_4` via a des imports
 
 # Modele utilisé
 
